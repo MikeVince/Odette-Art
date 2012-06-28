@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Odette-art</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<meta name="description" content="beschrijving pagina seo">
+<meta name="keywords" content="keywords seo">
+<!--make sure mobile devices display the page at the proper scale	-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript" >
+​
+
+
+</script><!--weghalen indien klaar met testen-->
+<style type="text/css">
+
+body{
+margin: 0px;
+padding: 0px;
+background-color: #acd7f9;
+background: url('images/bg.gif') #acd7f9 no-repeat center top;
+width: 100%;
+height: 100%;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+color: #18466b;
+}
+
+#wrapper{
+
+width: 100%;
+height: 1000px;
+margin: 0 auto;
+padding-top: 60px;
+}
+
+#main{
+width:780px;
+min-height: 500px;
+background-color: white; 
+margin: 0 auto;
+padding-top: 40px;
+padding-right: 50px; 
+padding-left: 50px;
+-webkit-box-shadow: 0px 0px 28px #18466b;
+-moz-box-shadow: 0px 0px 28px #18466b;
+box-shadow: 0px 0px 28px #18466b;
+}
+
+nav{
+
+height: 280px;
+width: 744px;
+margin: 0 auto;
+
+
+}
+ul.img {
+padding-left: 0;
+
+}
+ul.img li{
+display: inline-block;
+width: 124px;
+height: 222px;
+background: blue;
+border: #92559a solid 1px;
+float: left;
+margin-right: 28px;
+background: url('images/menu_item.jpg')
+}
+
+ul.img li:last-child{
+margin-right: 0;
+
+}
+
+
+ul.img li:nth-child(1){
+background: url('images/menu_item1.jpg')
+}
+ul.img li:nth-child(2){
+background: url('images/menu_item2.jpg')
+}
+ul.img li:nth-child(3){
+background: url('images/menu_item3.jpg')
+}
+ul.img li:nth-child(4){
+background: url('images/menu_item4.jpg')
+}
+ul.img li:nth-child(5){
+background: url('images/menu_item5.jpg')
+}
+
+ul.menutxt {
+padding-left: 0;
+clear: both;
+
+}
+ul.menutxt li{
+display: inline-block;
+width: 126px;
+float: left;
+margin-right: 28px;
+text-align: center;
+margin-top: 10px;
+
+}
+ul.menutxt li:last-child{
+margin-right: 0;
+
+}
+ul.menutxt li:nth-child(1){
+color: green;
+}
+ul.menutxt li:nth-child(2){
+color: red;
+}
+ul.menutxt li:nth-child(3){
+color: #18466b;
+}
+ul.menutxt li:nth-child(4){
+color: purple;
+}
+ul.menutxt li:nth-child(5){
+color: brown;
+}
+ul.menutxt li:hover {
+color: grey;
+cursor: pointer;
+
+}
+#logo{
+background: url('images/logo.gif') no-repeat;
+width: 297px;
+height: 63px;
+
+float: right;
+margin-top: 70px;
+margin-right: 30px;
+
+}
+#copy {
+float: left;
+clear: both;
+margin-top: 110px;
+padding-left: 30px;
+}
+</style><!--weghalen indien klaar met testen-->
+</head>
+
+<body >
+ 	<div id="wrapper">
+		<div id="main">
+			<nav>
+				<ul class="img">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="menutxt">
+					<li>Wie is Odette?</li>
+					<li>Schilderijen</li>
+					<li>Objecten</li>
+					<li>Projecten</li>
+					<li>Contact</li>
+				</ul>
+			</nav>
+			 <div id="copy">Copyright 2012</div>
+				<div id="logo"></div>
+			
+		</div>
+	</div>
+<script type="text/javascript">
+/*$('ul.img li').hover(
+		function(){
+ 			 $(this).filter(':not(:animated)').animate({
+ 				height: '122px',
+				'margin-top': '100px' ,
+				
+			});
+		}, 
+		function(){
+ 			$(this).animate({
+			 	height: '222px',
+			 	'margin-top': '0px' ,
+ 			});
+		}
+	);*/
+$('ul.img li')
+.hover(function(){
+	if (!$(this).hasClass('animated')) {
+		$(this).dequeue().stop().animate({ height: '122px',
+				'margin-top': '100px'  });
+	}
+}, function() {
+    $(this).addClass('animated').animate({ height: '222px',
+			 	'margin-top': '0px'  }, "normal", "linear", function() {
+		$(this).removeClass('animated').dequeue();
+	});
+});
+</script>
+	
+</body>
+</html>
