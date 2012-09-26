@@ -1,0 +1,192 @@
+/*reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:baseline;
+	font: inherit;
+}
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/*Global styles*/
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea { font-family: sans-serif; }
+
+body {
+	background: url('../images/bg.gif') #acd7f9 no-repeat center top;
+	width: 100%;
+	height: 100%;
+	font: 100% Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 1em; 
+	line-height: 1.4;
+	color: #18466b;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+#wrapper {
+	width:780px;
+	min-height: 500px;
+	background-color: white; 
+	margin: 0 auto;
+	margin-top: 60px;
+	padding-top: 40px;
+	padding-right: 50px; 
+	padding-left: 50px;
+	-webkit-box-shadow: 0px 0px 28px #18466b;
+	-moz-box-shadow: 0px 0px 28px #18466b;
+	box-shadow: 0px 0px 28px #18466b;
+}
+
+nav {
+	height: 280px;
+	width: 744px;
+	margin: 0 auto;
+}
+
+ul.nav-img {
+	padding-left: 0;
+
+}
+
+
+ul.nav-img a{
+	display: inline-block;
+	width: 124px;
+	height: 222px;
+	
+	margin-right: 28px;
+}
+
+ul.nav-img li{
+	display: inline-block;
+	width: 124px;
+	height: 222px;
+	background: blue;
+	border: #92559a solid 1px;
+	float: left;
+	margin-right: 28px;
+}
+
+
+ul.nav-img li:last-child{
+	margin-right: 0;
+
+}
+
+
+ul.nav-img li:nth-child(1){
+	background: url('../images/menu_item8.jpg')
+}
+ul.nav-img li:nth-child(2){
+	background: url('../images/menu_item2.jpg')
+}
+ul.nav-img li:nth-child(3){
+	background: url('../images/menu_item6.jpg')
+}
+ul.nav-img li:nth-child(4){
+	background: url('../images/menu_item4.jpg')
+}
+ul.nav-img li:nth-child(5){
+	background: url('../images/menu_item5.jpg')
+}
+
+ul.nav-txt {
+	padding-left: 0;
+	clear: both;
+
+}
+ul.nav-txt li{
+	display: inline-block;
+	width: 126px;
+	float: left;
+	margin-right: 28px;
+	text-align: center;
+	margin-top: 10px;
+
+}
+ul.nav-txt li:last-child{
+	margin-right: 0;
+
+}
+ul.nav-txt li:nth-child(1){
+	color: green;
+}
+ul.nav-txt li:nth-child(2){
+	color: red;
+}
+ul.nav-txt li:nth-child(3){
+	color: #18466b;
+}
+ul.nav-txt li:nth-child(4){
+	color: purple;
+}
+ul.nav-txt li:nth-child(5){
+	color: brown;
+}
+
+ul.nav-txt li:hover {
+	color: grey;
+	cursor: pointer;
+
+}
+#logo{
+	background: url('../images/logo.gif') no-repeat bottom;
+	width: 297px;
+	height: 63px;
+	float: right;
+	margin-top: 70px;
+	padding-right: 30px;
+}
+
+#copy {
+	float: right;
+	clear: both;
+	margin-top: 0;
+	padding-right: 30px;
+
+}
+
+a.twitter_icon{
+background: url(../images/twitter_icon.gif) no-repeat 20px 0;
+height:60px;
+width: 80px;
+float:left;
+margin-top: 80px;
+
+}
+
+a.twitter_icon:link, a.twitter_icon:visited  {
+background: url(../images/twitter_icon.gif) no-repeat 20px 0;
+
+}
+a.twitter_icon:hover, a.twitter_icon:active  {
+background: url(../images/twitter_icon_o.gif) no-repeat 20px 0;
+height:60px;
+width: 80px;
+float:left;
+margin-top: 80px;
+
+}
+
